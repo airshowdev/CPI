@@ -1,0 +1,91 @@
+﻿ /*Used by T3Week.aspx, will be used by CPIOverview.aspx*/
+
+        .button-card {
+            padding: 40px;
+            width: 15vw;
+            min-width: 100px;
+            max-width: 200px;
+            height: unset;
+            background: #293949;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: calc(5px + 0.5vw);
+            transform: translate(-50%, -50%);
+            margin: 0 auto 10px;
+            border-radius: 2px;
+            -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            align-content: center;
+        }
+
+        #topleft {
+            top: 40%;
+            left: 30%;
+        }
+
+        #topmiddle {
+            top: 40%;
+            left: 50%;
+        }
+
+        #topright {
+            top: 40%;
+            left: 70%;
+        }
+
+        #bottomleft {
+            top: 66%;
+            left: 30%;
+        }
+
+        #bottommiddle {
+            top: 66%;
+            left: 50%;
+        }
+
+        #bottomright {
+            top: 66%;
+            left: 70%;
+        }
+
+        .button-card h1 {
+            font-weight: 100;
+            text-align: center;
+            font-size: 2.3em;
+            color: #ddd;
+        }
+
+        .button-card label {
+            text-align: right;
+            background-color: transparent;
+            color: #ddd;
+            box-shadow: none;
+        }
+
+        .button {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            padding: 0 8px;
+        }
+        .button-card a {
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 100;
+            text-align: center;
+            display: inline-block;
+        }
+
+            .button-card a:hover {
+                text-shadow: 2px; 
+                color: #0FC0F5;
+            }
+
+        .button-Log-Out {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+        }
