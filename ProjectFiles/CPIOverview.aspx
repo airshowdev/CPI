@@ -5,34 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="StyleSheets/CPIOverview_Layout.css" type="text/css"/>
-    <title></title>
-</head>
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/Background.css" type="text/css" />
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/Sidebar.css" type="text/css"/>
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/ProgressBar.css" type="text/css"/>
+    <title></title> 
+</head> 
 
 <body style="text-align: center">
-        <script>
-            function sleep(ms) {
-                return new Promise(resolve => setTimeout(resolve, ms));
-            };
-
-            window.onload = async () => {
-                for (i = 0; i < 101; i++){
-                    document.getElementById('T-3prg').value = i;
-                    document.getElementById('T-3lbl').innerHTML = i.toString() + "%";
-                    document.getElementById('T-2prg').value = i;
-                    document.getElementById('T-2lbl').innerHTML = i.toString() + "%";
-                    document.getElementById('T-1prg').value = i;
-                    document.getElementById('T-1lbl').innerHTML = i.toString() + "%";
-                    document.getElementById('T-0prg').value = i;
-                    document.getElementById('T-0lbl').innerHTML = i.toString() + "%";
-                    document.getElementById('T-90prg').value = i;
-                    document.getElementById('T-90lbl').innerHTML = i.toString() + "%";
-                    document.getElementById('T-120prg').value = i;
-                    document.getElementById('T-120lbl').innerHTML = i.toString() + "%";
-                    await sleep(100);
-                }
-                window.
-            }
-        </script>
+      
     <form id="form1" runat="server">
 
         <aside class="sidebar">
@@ -42,9 +22,23 @@
                         <a href="CPIUserAccount.aspx"><i class="fa fa-dashboard"></i><span>Dashboard - (User) Logged In</span></a>
                     </li>
                     <li>
-                        <a href="404.aspx"><i class="fa fa-cogs"></i><span>Example Menu</span></a>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Example Menu</span></a>
                     </li>
-
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Personal Info</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Contact</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Help Files</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Notifications</span></a>
+                    </li>               
+                    <li>
+                        <a href="user.aspx"><span id="user">User</span></a>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -53,51 +47,33 @@
         <div class="bg-img"></div>
 
         <div class="overview-card" id="topleft">
-            <h1>T-3 Week</h1>
-            <label class="overview-card" id="T-3lbl">
-
-            </label>
+            <h1><a href="Pre-Event_Planning_Overview(T3)/T3Week.aspx">Pre-Event Planning Overview</a></h1>
             <progress max="100" value="33" class="btr" id="T-3prg">
 		</progress>
         </div>
         <div class="overview-card" id="topmiddle">
-            <h1>T-2 Week</h1>
-            <label class="overview-card" id="T-2lbl">
-
-            </label>
+            <h1>Pre-Event Preparation Overview T-2</h1>
             <progress max="100" value="66" class="btr" id="T-2prg">
 		</progress>
         </div>
         <div class="overview-card" id="topright">
-            <h1>T-1 Week</h1>
-            <label class="overview-card" id="T-1lbl">
-
-            </label>
+            <h1>Pre-Event Preparation Overview T-1</h1>
             <progress max="100" value="100" class="btr" id="T-1prg">
 		</progress>
         </div>
 
         <div class="overview-card" id="bottomleft">
-            <h1>T-0 Week</h1>
-            <label class="overview-card" id="T-0lbl">
-
-            </label>
+            <h1>Event Execution Overview</h1>
             <progress max="100" value="20" class="btr" id="T-0prg">
 		</progress>
         </div>
         <div class="overview-card" id="bottommiddle">
-            <h1>T+90 Week</h1>
-            <label class="overview-card" id="T-90lbl">
-
-            </label>
+            <h1>Post-Event Implementation Overview</h1>
             <progress max="100" value="40" class="btr" id="T-90prg">
 		</progress>
         </div>
         <div class="overview-card" id="bottomright">
-            <h1>T+120 Week</h1>
-            <label class="overview-card" id="T-120lbl">
-
-            </label>
+            <h1>Post-Event Follow-Up Overview</h1>
             <progress max="100" value="60" class="btr" id="T-120prg">
 		</progress>
         </div>

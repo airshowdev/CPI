@@ -1,0 +1,234 @@
+﻿[
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/Pie_Chart.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/Pie_Chart.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/Background.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/Background.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/FixedHeaderOption1.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/FixedHeaderOption1.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/Flex(Grid).css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/Flex(Grid).less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/FlexGrid.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/FlexGrid.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/ProgressBar.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/ProgressBar.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/Sidebar.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/Sidebar.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/ToDoList.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/ToDoList.less"
+  },
+  {
+    "outputFile": "StyleSheets/CPILogin_Layout.css",
+    "inputFile": "StyleSheets/CPILogin_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/CPIOverview_Layout.css",
+    "inputFile": "StyleSheets/CPIOverview_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/CPIUserAccount_Layout.css",
+    "inputFile": "StyleSheets/CPIUserAccount_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/CreateNewCPI_Layout.css",
+    "inputFile": "StyleSheets/CreateNewCPI_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/DataCollection_Layout.css",
+    "inputFile": "StyleSheets/DataCollection_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Draft_Charter.css",
+    "inputFile": "StyleSheets/Draft_Charter.less"
+  },
+  {
+    "outputFile": "StyleSheets/EventGo_NoGo_Layout.css",
+    "inputFile": "StyleSheets/EventGo_NoGo_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/RequestMentor_Layout.css",
+    "inputFile": "StyleSheets/RequestMentor_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/T0_Layout.css",
+    "inputFile": "StyleSheets/T0_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/T120_Layout.css",
+    "inputFile": "StyleSheets/T120_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/T1Week_Layout.css",
+    "inputFile": "StyleSheets/T1Week_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/T2Week_Layout.css",
+    "inputFile": "StyleSheets/T2Week_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/T3Week_Layout.css",
+    "inputFile": "StyleSheets/T3Week_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/T90Days_Layout.css",
+    "inputFile": "StyleSheets/T90Days_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/MeetWithChampion_Layout.css",
+    "inputFile": "StyleSheets/MeetWithChampion_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/DetermineRootCause_Layout.css",
+    "inputFile": "StyleSheets/DetermineRootCause_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/DevelopCountermeasures_Layout.css",
+    "inputFile": "StyleSheets/DevelopCountermeasures_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/DistributeEventNotification_Layout.css",
+    "inputFile": "StyleSheets/DistributeEventNotification_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/FinalizeCharter_Layout.css",
+    "inputFile": "StyleSheets/FinalizeCharter_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/IdentifyEventLocation_Layout.css",
+    "inputFile": "StyleSheets/IdentifyEventLocation_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/IdentifyPerformanceGaps_Layout.css",
+    "inputFile": "StyleSheets/IdentifyPerformanceGaps_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/MeetWithTeamLeader_Layout.css",
+    "inputFile": "StyleSheets/MeetWithTeamLeader_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ObtainSupplies_Layout.css",
+    "inputFile": "StyleSheets/ObtainSupplies_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ProcessWalk_Layout.css",
+    "inputFile": "StyleSheets/ProcessWalk_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ReviewKPI_Layout.css",
+    "inputFile": "StyleSheets/ReviewKPI_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/RoomSetUp_Layout.css",
+    "inputFile": "StyleSheets/RoomSetUp_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ScheduleInBriefOutBrief_Layout.css",
+    "inputFile": "StyleSheets/ScheduleInBriefOutBrief_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/SeeCountermeasuresThrough_Layout.css",
+    "inputFile": "StyleSheets/SeeCountermeasuresThrough_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/SetTargetImprovements_Layout.css",
+    "inputFile": "StyleSheets/SetTargetImprovements_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/StandardizeSuccessfulProcess_Layout.css",
+    "inputFile": "StyleSheets/StandardizeSuccessfulProcess_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/TeamKickOffAndAwareness_Layout.css",
+    "inputFile": "StyleSheets/TeamKickOffAndAwareness_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/TeamProcessWalk_Layout.css",
+    "inputFile": "StyleSheets/TeamProcessWalk_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ValidateData_Layout.css",
+    "inputFile": "StyleSheets/ValidateData_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ValidateResults_Layout.css",
+    "inputFile": "StyleSheets/ValidateResults_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/ClarifyAndValidateTheProblem_Layout.css",
+    "inputFile": "StyleSheets/ClarifyAndValidateTheProblem_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Event_Execution_Overview_CSS/T0_Layout.css",
+    "inputFile": "StyleSheets/Event_Execution_Overview_CSS/T0_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/NavButtons.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/NavButtons.less"
+  },
+  {
+    "outputFile": "StyleSheets/PreEvent_Planning_Overview/T3Week_Layout.css",
+    "inputFile": "StyleSheets/PreEvent_Planning_Overview/T3Week_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/VarMixin.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/VarMixin.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/Header.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/Header.less"
+  },
+  {
+    "outputFile": "StyleSheets/PreEvent_Planning_Overview/MeetWithChampion_Layout.css",
+    "inputFile": "StyleSheets/PreEvent_Planning_Overview/MeetWithChampion_Layout.less"
+  },
+  {
+    "outputFile": "JS/sidebar.es5.js",
+    "inputFile": "JS/sidebar.js"
+  },
+  {
+    "outputFile": "StyleSheets/PreEvent_Planning_Overview/MeetWithTeamLeader_Layout.css",
+    "inputFile": "StyleSheets/PreEvent_Planning_Overview/MeetWithTeamLeader_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/PreEvent_Planning_Overview/DataCollection_Layout.css",
+    "inputFile": "StyleSheets/PreEvent_Planning_Overview/DataCollection_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/PreEvent_Planning_Overview/EventGo_NoGo_Decision_Layout.css",
+    "inputFile": "StyleSheets/PreEvent_Planning_Overview/EventGo_NoGo_Decision_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/PreEvent_Planning_Overview/RequestMentor_Layout.css",
+    "inputFile": "StyleSheets/PreEvent_Planning_Overview/RequestMentor_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/DropDown.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/DropDown.less"
+  },
+  {
+    "outputFile": "StyleSheets/Event_Execution_Overview/DetermineRootCause_Layout.css",
+    "inputFile": "StyleSheets/Event_Execution_Overview/DetermineRootCause_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Event_Execution_Overview/DevelopCountermeasures_Layout.css",
+    "inputFile": "StyleSheets/Event_Execution_Overview/DevelopCountermeasures_Layout.less"
+  },
+  {
+    "outputFile": "StyleSheets/Shared_Style_Sheets/FormCard.css",
+    "inputFile": "StyleSheets/Shared_Style_Sheets/FormCard.less"
+  }
+]

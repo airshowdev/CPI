@@ -1,0 +1,94 @@
+﻿@formWidth: 600px;
+
+.form-card {
+            padding: 20px 30px 20px 30px;
+            width: @formWidth;
+            background: #293949;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 2px;
+            -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+            .form-card h1 {
+                font-weight: 100;
+                margin-top: 25px;
+                text-align: center;
+                font-size: 2.3em;
+                color: #ddd;
+            }
+
+            .form-card input[type=submit] {
+                width: @formWidth/4;
+                margin-bottom: 10px;  
+            }
+
+            .form-card input[type=text], input[type=password] {
+                height: 44px;
+                font-size: 16px;
+                width: 100%;
+                margin-bottom: 10px;
+                -webkit-appearance: none;
+                background: #ddd;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                padding: 0 8px;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+
+                .form-card input[type=text]:hover, input[type=password]:hover {
+                    border: 1px solid #b9b9b9;
+                    border-top: 1px solid #a0a0a0;
+                    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+                    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+                }
+
+        .form {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            padding: 0 8px;
+        }
+
+        .form-submit {
+            color: white;
+            border: 0px;
+            text-shadow: 0 1px rgba(0,0,0,0.1);
+            background-image: linear-gradient(to bottom right, #0FC0F5, #25DFDD);
+        }
+
+            .form-submit:hover {
+                border: 0px;
+                text-shadow: 0 2px rgba(0,0,0,0.3);
+                background-color: #357ae8;
+                cursor: pointer;
+            }
+
+        .form-card a {
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 400;
+            text-align: center;
+            display: inline-block;
+            opacity: 0.6;
+            transition: opacity ease 0.5s;
+        }
+
+            .form-card a:hover {
+                opacity: 1;
+            }
+
+        .form-help {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+

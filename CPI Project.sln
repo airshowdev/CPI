@@ -1,33 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1(2)", ".\ProjectFiles\", "{3BB6F41B-6F86-4B35-B60C-3C2FB59E95B1}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProjectFiles", "ProjectFiles\", "{3BB6F41B-6F86-4B35-B60C-3C2FB59E95B1}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_4846"
-		Debug.AspNetCompiler.PhysicalPath = ".\ProjectFiles\"
+		Debug.AspNetCompiler.PhysicalPath = "ProjectFiles\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4846\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_4846"
-		Release.AspNetCompiler.PhysicalPath = ".\ProjectFiles\"
+		Release.AspNetCompiler.PhysicalPath = "ProjectFiles\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4846\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "4846"
-		SlnRelativePath = ".\ProjectFiles\"
+		SlnRelativePath = "ProjectFiles\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBAEE328-B51E-4063-B496-A6FEEC8CDB44}"
 	ProjectSection(SolutionItems) = preProject
 		move_progress_bar.js = move_progress_bar.js
+		pie_chart.js = pie_chart.js
+		testphp.html = testphp.html
 	EndProjectSection
 EndProject
 Global
@@ -40,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EDD9E83-6AE4-4785-A307-A46C16E46352}
 	EndGlobalSection
 EndGlobal

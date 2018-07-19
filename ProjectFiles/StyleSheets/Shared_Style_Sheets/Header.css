@@ -1,0 +1,31 @@
+﻿.header {
+  height: 50px;
+  left: 50vw;
+}
+#header-sroll {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  float: none;
+  width: 100%;
+  /*
+    -ms-transition:     all 0.3s ease-out;
+    -moz-transition:    all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition:      all 0.3s ease-out;
+    transition:         all 0.3s ease-out;*/
+}
+#header-sroll h1 {
+  text-shadow: 2px;
+  font-size: 30px;
+  color: #ddd;
+  text-align: match-parent;
+  line-height: 50px;
+  /*
+    -ms-transition:    all 0.3s ease-out;
+    -moz-transition:    all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition:      all 0.3s ease-out;
+    transition:         all 0.3s ease-out;
+        */
+}

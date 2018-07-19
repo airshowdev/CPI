@@ -4,81 +4,49 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" href="StyleSheets/CPILoginCard_Layout.css" type="text/css"/>
-    <link rel="stylesheet" href="StyleSheets/CPISidebar_Layout.css" type="text/css"/>
-    <title></title>
-
-    <style>
-        .bg-img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-        }
-
-            .bg-img:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-                opacity: .6;
-            }
-
-        html {
-            background: #ddd;
-        }
-
-        html {
-            height: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-        @import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
-
-        body {
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-        }
-        </style>
-
+    <link rel="stylesheet" href="StyleSheets/CPIUserAccount_Layout.css" type="text/css"/>
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/Sidebar.min.css" type="text/css"/>
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/Background.css" type="text/css" />
+    <title>CPI User Account</title>
+    
 </head>
 <body>
-    <form id="form1" runat="server">
-        
-        <aside class="sidebar">
-            <div id="leftside-navigation" class="nano">
+     <aside class="sidebar">
+            <%--<div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
-                    <li>
+                    <li onclick="userAccountClick" runat="server">
                         <a href="CPIUserAccount.aspx"><i class="fa fa-dashboard"></i><span>Dashboard - (User) Logged In</span></a>
                     </li>
                     <li>
-                        <a href="404.aspx"><i class="fa fa-cogs"></i><span>Example Menu</span></a>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Example Menu</span></a>
+                    </li>
+                    <li>
+                        <a href="CPIUserAccount.aspx"><i class="fa fa-cogs"></i><br /><span>Personal Info</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Contact</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Help Files</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Notifications</span></a>
                     </li>
 
                 </ul>
-            </div>
+            </div>--%>
         </aside>
+    <form id="form1" runat="server">
 
         <div class="bg-img"></div>
 
         <div class="login-card">
-            <h1>CPI User Account</h1>
-                <input type="submit" name="Edit" class="login login-submit" value="Edit Existing CPI"/>
-                <input type="submit" name="Create" class="login login-submit" value="Create CPI"/>
-                <input type="submit" name="Search" class="login login-submit" value="Search CPI Database"/>
+            <h1 id="test1">CPI User Account</h1>
+                <input type="submit" name="404.aspx" class="login login-submit" value="Edit Existing CPI" onserverclick="CreateNewClick" runat="server"/>
+                <input type="submit" name="CreateNewCPI" id="CreateNewCPI" class="login login-submit" value="Create CPI" onserverclick="CreateNewClick" runat="server"/>
+                <input type="submit" name="404.aspx" class="login login-submit" value="Search CPI Database" onserverclick="CreateNewClick" runat="server"/>
             
-            <div class="login-Help">
+            <div class="login-help">
                 <a href="#">Help</a> • <a href="#">Contact</a>
             </div>
         </div>

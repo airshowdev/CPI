@@ -5,55 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="StyleSheets/CreateNewCPI_Layout.css" type="text/css"/>
-    <link rel="stylesheet" href="StyleSheets/CPISidebar_Layout.css" type="text/css"/>
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/Sidebar.css" type="text/css"/>
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/Background.css" type="text/css" />
+    <link rel="stylesheet" href="StyleSheets/Shared_Style_Sheets/DropDown.css" type="text/css" />
     <title></title>
-    <style>
-
-        body {
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-        }
- 
-        html {
-            background: #ddd;
-        }
-
-        html {
-            height: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-        @import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
-
-        .bg-img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-        }
-
-            .bg-img:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-                opacity: .6;
-            }
-    </style>
 </head>
-<body>
 
+<body>
     <form id="form1" runat="server">
         <aside class="sidebar">
             <div id="leftside-navigation" class="nano">
@@ -62,10 +20,22 @@
                         <a href="CPIUserAccount.aspx"><i class="fa fa-dashboard"></i><span>Dashboard - (User) Logged In</span></a>
                     </li>
                     <li>
-                        <a href="404.aspx"><i class="fa fa-cogs"></i><span>Example Menu</span></a>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Example Menu</span></a>
                     </li>
-                    <li style ="position:fixed; bottom: 2vw; left: 4.5vw;">
-                        <a href="user.aspx"><span>User</span></a>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Personal Info</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Contact</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Help Files</span></a>
+                    </li>
+                    <li>
+                        <a href="404.aspx"><i class="fa fa-cogs"></i><br /><span>Notifications</span></a>
+                    </li>
+                    <li>
+                        <a href="user.aspx"><span id="user">User</span></a>
                     </li>
 
                 </ul>
@@ -76,10 +46,20 @@
 
         <div class="account-card">
             <h1>Create New CPI</h1>
-            <input type="text" name="UnitInfo" placeholder="Unit/Sq Info" />
-            <input type="text" name="Process" placeholder="Process/Issue" />
+            
+            <div class="dropdown">
+              <button class="dropbtn">Select Template</button>
+              <div class="dropdown-content">
+                <a href="#">Example 1</a>
+                <a href="#">Example 2</a>
+                <a href="#">Example 3</a>
+              </div>
+            </div>
+
+            <textarea rows="1" name="UnitInfo" placeholder="Unit/Sq Info"></textarea>
+            <textarea rows="1" name="Process" placeholder="Process/Issue"></textarea>
             <textarea rows="7" name="Description" placeholder="Description"></textarea>
-            <input type="submit" name="Create" class="account-submit" value="Create"/>
+            <input type="submit" id="CPIOverview" name="Create" class="account-submit" value="Create" onserverclick="CreateClick" runat="server"/>
             </div>
         <%--    <div style="text-align: center">
     

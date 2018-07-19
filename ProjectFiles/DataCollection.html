@@ -1,0 +1,46 @@
+﻿
+<head runat="server">
+    <link rel="stylesheet" href="/StyleSheets/Shared_Style_Sheets/FormCard.css" type="text/css" />
+    <link rel="stylesheet" href="/StyleSheets/Shared_Style_Sheets/DropDown.css" type="text/css" />
+    <script src="../JS/divLoader.js"></script>
+</head>
+<div class="form-card">
+    <h1>Data Collection</h1>
+    <textarea readonly="readonly" rows="7" name="information" placeholder="Information"></textarea>
+
+    <div class="dropdown">
+        <button class="dropbtn">Select Template</button>
+        <div class="dropdown-content">
+            <a href="#">Example 1</a>
+            <a href="#">Example 2</a>
+            <a href="#">Example 3</a>
+        </div>
+    </div>
+
+    <div>
+        <label>Field Name:</label>
+        <input id="fieldname" type="text" name="" class="labeledtext" placeholder="ex." />
+    </div>
+    <div>
+        <label>Average:</label>
+        <input type="text" class="labeledtext" name="Average" placeholder="ex. 85%" />
+    </div>
+    <div>
+        <label>Goal:</label>
+        <input type="text" class="labeledtext" name="Goal" placeholder="ex. 90%" />
+    </div>
+    <div>
+        <label>Datatype:</label>
+        <input type="text" class="labeledtext" name="Datatype" placeholder="ex. Date" />
+    </div>
+    <div>
+        <label>Gap:</label>
+        <input type="text" class="labeledtext" name="Gap" placeholder="ex. 5%" />
+    </div>
+    <div>
+        <input type="submit" name="download" class="account-submit" value="Download Template" />
+    </div>
+    <div>
+        <input type="submit" name="upload" class="account-submit" value="Upload Baseline Data" />
+    </div>
+</div>

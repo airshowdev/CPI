@@ -1,0 +1,1 @@
+﻿.header{background:#ff6347;height:200px;color:#efefef;}.header-fixed{background:#ff6347;font-size:14px;position:fixed;line-height:40px;height:40px;text-indent:20px;width:100%;}.header-notFixed{line-height:200px;text-align:center;font-size:28px;}.header-notFixed p{z-index:9999;position:relative;}

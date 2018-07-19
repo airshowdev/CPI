@@ -1,385 +1,218 @@
-﻿
-        .overview-card {
-            padding: 40px;
-            width: 15vw;
-            min-width: 100px;
-            max-width: 200px;
-            height: unset;
-            background: #293949;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            font-size: calc(5px + 0.5vw);
-            transform: translate(-50%, -50%);
-            margin: 0 auto 10px;
-            border-radius: 2px;
-            -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            align-content: center;
-        }
-
-        #topleft {
-            top: 40%;
-            left: 30%;
-        }
-
-        #topmiddle {
-            top: 40%;
-            left: 50%;
-        }
-
-        #topright {
-            top: 40%;
-            left: 70%;
-        }
-
-        #bottomleft {
-            top: 66%;
-            left: 30%;
-        }
-
-        #bottommiddle {
-            top: 66%;
-            left: 50%;
-        }
-
-        #bottomright {
-            top: 66%;
-            left: 70%;
-        }
-
-        .overview-card h1 {
-            font-weight: 100;
-            text-align: center;
-            font-size: 2.3em;
-            color: #ddd;
-        }
-
-        .overview-card label {
-            text-align: right;
-            background-color: transparent;
-            color: #ddd;
-            box-shadow: none;
-        }
-
-        .overview-card input[type=submit] {
-            align-self: center;
-            width: 50%;
-            transform: translate(50%, 0);
-            display: block;
-            margin-bottom: 10px;
-            position: relative;
-        }
-
-        .overview-card input[type=text], input[type=password] {
-            height: 44px;
-            font-size: 16px;
-            width: 100%;
-            margin-bottom: 10px;
-            -webkit-appearance: none;
-            background: #fff;
-            border: 1px solid #d9d9d9;
-            border-top: 1px solid #c0c0c0;
-            /* border-radius: 2px; */
-            padding: 0 8px;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-        }
-
-        .overview-card textarea {
-            overflow-y: scroll;
-            resize: none;
-            font-size: 16px;
-            width: 100%;
-            margin-bottom: 10px;
-            background: #fff;
-            border: 1px solid #d9d9d9;
-            border-top: 1px solid #c0c0c0;
-            border-radius: 2px;
-            padding: 0 8px;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-        }
-
-        .overview-card input[type=text]:hover, input[type=password]:hover {
-            border: 1px solid #b9b9b9;
-            border-top: 1px solid #a0a0a0;
-            -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-            -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-        }
-
-        .overview {
-            text-align: center;
-            font-size: 14px;
-            font-weight: 700;
-            height: 36px;
-            padding: 0 8px;
-        }
-
-
-        .overview-submit {
-            color: white;
-            border: 0px;
-            text-shadow: 0 1px rgba(0,0,0,0.1);
-            background-image: linear-gradient(to bottom right, #0FC0F5, #25DFDD);
-        }
-
-            .overview-submit:hover {
-                /* border: 1px solid #2f5bb7; */
-                border: 0px;
-                text-shadow: 0 2px rgba(0,0,0,0.3);
-                background-color: #357ae8;
-                cursor: pointer;
-                /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-            }
-
-        .overview-card a {
-            text-decoration: none;
-            color: #ddd;
-            font-weight: 100;
-            text-align: center;
-            display: inline-block;
-        }
-
-            .overview-card a:hover {
-                text-shadow: 2px; 
-                color: #0FC0F5;
-            }
-
-        .overview-Log-Out {
-            width: 100%;
-            text-align: center;
-            font-size: 12px;
-        }
-
-        html {
-            background: #ddd;
-        }
-
-        html {
-            height: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-        @import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
-
-        body {
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .sidebar-toggle {
-            margin-left: -240px;
-        }
-
-        .sidebar {
-            width: 12.5vw;
-            min-width: 100px;
-            height: 100%;
-            background: #293949;
-            align-content: center;
-            position: absolute;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            /*   -ms-transition: all 0.3s ease-in-out;*/
-            transition: all 0.3s ease-in-out;
-            z-index: 100;
-        }
-
-            .sidebar #leftside-navigation ul,
-            .sidebar #leftside-navigation ul ul {
-                margin: -2px 0 0;
-                padding: 0;
-            }
-
-                .sidebar #leftside-navigation ul li {
-                    list-style-type: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-                }
-
-                    .sidebar #leftside-navigation ul li.active > a {
-                        color: #1abc9c;
-                    }
-
-                    .sidebar #leftside-navigation ul li.active ul {
-                        display: block;
-                    }
-
-                    .sidebar #leftside-navigation ul li a {
-                        color: #ddd;
-                        text-decoration: none;
-                        display: block;
-                        padding: 18px 0 18px 0px;
-                        text-align: center;
-                        font-size: calc(10px + 0.8vw);
-                        outline: 0;
-                        -webkit-transition: all 200ms ease-in;
-                        -moz-transition: all 200ms ease-in;
-                        -o-transition: all 200ms ease-in;
-                        /*    -ms-transition: all 200ms ease-in;*/
-                        transition: all 200ms ease-in;
-                    }
-
-                        .sidebar #leftside-navigation ul li a:hover {
-                            color: #1abc9c;
-                        }
-
-                        .sidebar #leftside-navigation ul li a span {
-                            display: inline-block;
-                        }
-
-                        .sidebar #leftside-navigation ul li a i {
-                            width: 20px;
-                        }
-
-                            .sidebar #leftside-navigation ul li a i .fa-angle-left,
-                            .sidebar #leftside-navigation ul li a i .fa-angle-right {
-                                padding-top: 3px;
-                            }
-
-                .sidebar #leftside-navigation ul ul {
-                    display: none;
-                }
-
-                    .sidebar #leftside-navigation ul ul li {
-                        background: #23313f;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        border-bottom: none;
-                    }
-
-                        .sidebar #leftside-navigation ul ul li a {
-                            font-size: 12px;
-                            padding-top: 13px;
-                            padding-bottom: 13px;
-                            color: #aeb2b7;
-                        }
-
-        .bg-img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-        }
-
-            .bg-img:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-                opacity: .6;
-            }
-
-        @import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
-
-        /* Styling an indeterminate progress bar */
-
-        progress:not(value) {
-           
-        }
-
-        /* Styling the determinate progress element */
-
-        progress[value] {
-            /* Get rid of the default appearance */
-            appearance: none;
-            /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
-            border: none;
-            /* Add dimensions */
-            width: 100%;
-            height: 20px;
-            background-color: whiteSmoke;
-            border-radius: 3px;
-            box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-            color: royalblue;
-            position: relative;
-            margin: 0 0 1.5em;
-        }
-
-            progress[value]::-webkit-progress-bar {
-                background-color: whiteSmoke;
-                border-radius: 3px;
-                box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-            }
-
-            progress[value]::-webkit-progress-value {
-                position: relative;
-                background-size: 35px 20px, 100% 100%, 100% 100%;
-                border-radius: 3px;
-                animation: animate-stripes 5s linear infinite;
-            }
-
-        @keyframes animate-stripes {
-            100% {
-                background-position: -100px 0;
-            }
-        }
-
-
-        progress[value]::-webkit-progress-value:after {
-            /* Only webkit/blink browsers understand pseudo elements on pseudo classes. */
-            content: '';
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            top: 7px;
-            right: 7px;
-            background-color: white;
-            border-radius: 100%;
-        }
-
-
-        progress[value]::-moz-progress-bar {
-            /* Gradient background with Stripes */
-            background-image: -moz-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%, transparent 66%), -moz-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)), -moz-linear-gradient( left, #09c, #f44);
-            background-size: 35px 20px, 100% 100%, 100% 100%;
-            border-radius: 3px;
-        }
-
-        /* Fallback technique styles */
-        .progress-bar {
-            border-radius: 3px;
-            box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-            /* Dimensions should be similar to the parent progress element. */
-            width: 100%;
-            height: 20px;
-        }
-
-            .progress-bar span {
-                background-color: royalblue;
-                border-radius: 3px;
-                display: block;
-                text-indent: -9999px;
-            }
-
-        p[data-value] {
-            position: relative;
-        }
-
-            /* The percentage will automatically fall in place as soon as we make the width fluid. */
-
-            p[data-value]:after {
-                content: attr(data-value) '%';
-                position: absolute;
-                right: 0;
-            }
-    
-        .btr::-webkit-progress-value {
-            /* Gradient background with Stripes */
-            background-image: -webkit-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%, transparent 66%), -webkit-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)), -webkit-linear-gradient( left, #09c, #f44);
-        }
+﻿/*.centerVert {
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        }*/
+.overview-card {
+  padding: calc -12.498vw;
+  width: 200px;
+  height: 180px;
+  background: #293949;
+  position: absolute;
+  top: 50%;
+  left: calc(62.5vw);
+  font-size: calc(5.5px);
+  transform: translate(-50%, -50%);
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  align-content: center;
+}
+#topleft {
+  top: 35%;
+  left: 30%;
+}
+#topmiddle {
+  top: 35%;
+  left: 50%;
+}
+#topright {
+  top: 35%;
+  left: 70%;
+}
+#bottomleft {
+  top: 66%;
+  left: 30%;
+}
+#bottommiddle {
+  top: 66%;
+  left: 50%;
+}
+#bottomright {
+  top: 66%;
+  left: 70%;
+}
+.overview-card h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 5em;
+  color: #ddd;
+}
+.overview-card label {
+  text-align: right;
+  background-color: transparent;
+  color: #ddd;
+  box-shadow: none;
+}
+.overview-card input[type=submit] {
+  align-self: center;
+  width: 50%;
+  transform: translate(50%, 0);
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+.overview-card input[type=text],
+input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.overview-card textarea {
+  overflow-y: scroll;
+  resize: none;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  border-radius: 2px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.overview-card input[type=text]:hover,
+input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.overview {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+}
+.overview-submit {
+  color: white;
+  border: 0px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom right, #0FC0F5, #25DFDD);
+}
+.overview-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #357ae8;
+  cursor: pointer;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+.overview-card a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 100;
+  text-align: center;
+  display: inline-block;
+}
+.overview-card a:hover {
+  text-shadow: 2px;
+  color: #0FC0F5;
+}
+.overview-Log-Out {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+/* Styling the determinate progress element */
+progress[value] {
+  /* Get rid of the default appearance */
+  appearance: none;
+  /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+  border: none;
+  /* Add dimensions */
+  width: 100%;
+  height: 20px;
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  color: royalblue;
+  position: relative;
+  margin: 0 0 1.5em;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+progress[value]::-webkit-progress-value {
+  position: relative;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+  animation: animate-stripes 5s linear infinite;
+}
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0;
+  }
+}
+progress[value]::-webkit-progress-value:after {
+  /* Only webkit/blink browsers understand pseudo elements on pseudo classes. */
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  right: 7px;
+  background-color: white;
+  border-radius: 100%;
+}
+progress[value]::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image: -moz-linear-gradient(135deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)), -moz-linear-gradient(left, #09c, #f44);
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+}
+/* Fallback technique styles */
+.progress-bar {
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  /* Dimensions should be similar to the parent progress element. */
+  width: 100%;
+  height: 20px;
+}
+.progress-bar span {
+  background-color: royalblue;
+  border-radius: 3px;
+  display: block;
+  text-indent: -9999px;
+}
+p[data-value] {
+  position: relative;
+}
+/* The percentage will automatically fall in place as soon as we make the width fluid. */
+p[data-value]:after {
+  content: attr(data-value) '%';
+  position: absolute;
+  right: 0;
+}
+.btr::-webkit-progress-value {
+  /* Gradient background with Stripes */
+  background-image: -webkit-linear-gradient(135deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)), -webkit-linear-gradient(left, #09c, #f44);
+}
